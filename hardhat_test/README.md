@@ -11,7 +11,7 @@ open other cmd
 npx hardhat test --network hardhat
 ```
 
-<h3>Test results (Vulnerability Report):</h3>
+<h3>Test results (Vulnerability Report)</h3>
 
 <b>Vulnerability 1: Unintended Transfer of Ether</b>
 
