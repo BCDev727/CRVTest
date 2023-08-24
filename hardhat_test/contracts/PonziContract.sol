@@ -30,8 +30,8 @@ contract PonziContract is ReentrancyGuard, Ownable {
         emit RegistrationDeadline(registrationDeadline);
     }
 
-    //If an affiliate's contract has a malicious fallback function, it could exploit the Ether transfer in the loop, leading to unintended loss of Ether.
-    //An issue with a fallback function in one of the affiliates' addresses can cause the entire joinPonzi function to revert, leading to a situation where legitimate users can't join the contract.
+    // If an affiliate's contract has a malicious fallback function, it could exploit the Ether transfer in the loop, leading to unintended loss of Ether.
+    // An issue with a fallback function in one of the affiliates' addresses can cause the entire joinPonzi function to revert, leading to a situation where legitimate users can't join the contract.
     
     function joinPonzi(
         address[] calldata _afilliates
